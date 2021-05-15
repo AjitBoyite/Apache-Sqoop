@@ -18,7 +18,7 @@ use mytrainingdb;
 
 create table temptable ( sno INT, name VARCHAR(180) NOT NULL, gender VARCHAR(20) NOT NULL);
 create table address ( id INT PRIMARY KEY, addname VARCHAR(180) NOT NULL, city VARCHAR(20) NOT NULL);
-insert into temptable (1,"raj","Male");
+insert into temptable values(1,"raj","Male");
 alter table temptable add column `id` int(10) unsigned primary KEY AUTO_INCREMENT;
 
 create table address ( addressid INT, addname VARCHAR(180) NOT NULL, city VARCHAR(20) NOT NULL);
